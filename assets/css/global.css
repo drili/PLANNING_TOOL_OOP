@@ -1,0 +1,51 @@
+/* 
+    Global CSS Styles. No Breakpoints.
+*/
+
+/* ***
+Global Styles
+[START] 
+*** */
+
+/* ***
+Global Styles
+[END] 
+*** */
+
+/* ***
+[START] .header-nav
+*** */
+.header-nav {
+    background: beige;
+    padding: 5px 0;
+}
+.header-nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+.header-nav ul li {
+    list-style: none;
+}
+.header-nav li a {
+    color: #000;
+    font-weight: bold;
+}
+/* ***
+[END] .header-nav
+*** */
+
+/* ***
+[START] .footer
+*** */
+.footer {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background: aliceblue;
+    padding: 20px 0;
+    bottom: 0;
+    z-index: 999;
+}
+/* ***
+[END] .footer
+*** */

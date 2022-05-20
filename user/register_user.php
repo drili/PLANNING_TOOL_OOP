@@ -1,14 +1,14 @@
 <?php
     // *** Set current directory
-    $currentDirectory = ".";
+    $currentDirectory = "..";
 
     // *** Require global files (header)
-    require_once dirname( __FILE__ ) . '/' . 'template-parts/header.php';
+    require_once dirname( __FILE__ ) . '/../' . 'template-parts/header.php';
 ?>
 
 <div class="grid-x">
     <div class="cell small-6">
-        <h1>INDEX.PHP</h1>
+        <h1>REGISTER_USER.PHP</h1>
     </div>
 
     <div class="cell small-6">
@@ -18,5 +18,5 @@
 
 <?php
     // *** Require global files (footer)
-    require_once dirname( __FILE__ ) . '/' . 'template-parts/footer.php';
+    require_once dirname( __FILE__ ) . '/../' . 'template-parts/footer.php';
 ?>

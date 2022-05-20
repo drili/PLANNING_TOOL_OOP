@@ -1,3 +1,14 @@
+<?php
+    // *** Database connection
+    require_once dirname( __FILE__ ) . '/../' . 'classes/Conn.php';
+    $db = new Conn();
+
+    // *** Globals
+    require_once dirname( __FILE__ ) . '/../' . 'assets/functions/global_functions.php';
+
+    // *** Init global functions
+    GlobalVariables();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,23 +18,24 @@
     <title>Planning Tool OOP</title>
 
     <!-- *** CSS -->
-    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css">
-    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="<?php echo $currentDirectory; ?>/assets/css/reset.css">
+    <link rel="stylesheet" href="<?php echo $currentDirectory; ?>/assets/css/global.css">
 
     <!-- *** JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js"></script>
-    <script src="assets/js/global.js"></script>
-
-    <?php
-        // *** Globals
-        require_once dirname( __FILE__ ) . '/../' . 'assets/functions/global_functions.php';
-
-        // *** Init global functions
-        GlobalVariables();
-    ?>
 </head>
 <body>
     <div class="body-class">
-        <h6>Header included</h6>
+        <div class="header-nav">
+            <div class="header-nav-functions">
+                <ul>
+                <li><a href="<?php echo $currentDirectory; ?>/index.php">Home</a></li>
+                    <li><a href="<?php echo $currentDirectory; ?>/user/register_user.php">Register User</a></li>
+                    <li><a href="">Edit users</a></li>
+                    <li><a href="">Login</a></li>
+                    <li><a href="">Logout</a></li>
+                </ul>
+            </div>
+        </div>

@@ -2,50 +2,384 @@
     Global CSS Styles. No Breakpoints.
 */
 
-/* ***
+/* *** *** *** *** ***
 Global Styles
 [START] 
 *** */
+:root {
+    --main-color: #6363FC;
+    --main-color-alternativ: #01152e;
+}
+* {
+    font-family: 'Sora', sans-serif !important;
+}
+body {
+    background-color: #F8FAFB;
+}
+h2 {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+p {
+    font-weight: 200;
+}
+button:hover {
+    cursor: pointer;
+}
+.logo-font {
+    font-family: 'Lobster', cursive !important;
+    font-family: 'Sora', sans-serif;
+}
+.grid-x {
+    margin-left: 60px;
+    margin-right: 60px;
+}
 
-/* ***
+body[data-aos-easing="new-easing"] [data-aos], [data-aos][data-aos][data-aos-easing="new-easing"] {
+    transition-timing-function: cubic-bezier(0.65, 0, 0.35, 1) !important;
+}
+/* 
 Global Styles
 [END] 
-*** */
+*** *** *** *** *** */
 
-/* ***
+/* *** *** *** *** ***
 [START] .header-nav
 *** */
 .header-nav {
-    background: beige;
-    padding: 5px 0;
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    padding-left: 320px;
+    padding-right: 60px;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 }
 .header-nav ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: end;
 }
 .header-nav ul li {
     list-style: none;
 }
 .header-nav li a {
     color: #000;
-    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+.header-nav .header-item-user-settings-inner .header-item-user-bottom a {
+    margin-top: 15px;
+}
+.header-nav li a i {
+    color: var(--main-color);
+    font-size: 22px;
+    margin-right: 25px;
+}
+.header-nav .header-nav-functions,
+.header-nav ul,
+.header-nav li {
+    height: 100%;
+}
+.header-nav li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header-nav .profile-image {
+    max-width: 50px;
+    max-height: 50px;
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 100%;
+    padding: 0.25rem;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.header-nav .header-item-user-top .person-name {
+    letter-spacing: 1.5;
+    display: block;
+    white-space: nowrap;
+}
+.header-nav .header-item-user {
+    display: flex;
+    align-items: center;
+}
+.header-nav .header-item:hover {
+    cursor: pointer;
+}
+.header-nav .header-item-user-settings-inner {
+    background: #fff;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    z-index: 9999;
+    border-bottom: 2px solid var(--main-color);
+    box-shadow: rgb(136 165 191 / 48%) 6px 2px 16px 0px, rgb(255 255 255 / 80%) -6px -2px 16px 0px;
+}
+.header-nav .header-item-user-settings {
+    position: absolute;
+    right: 0;
+    top: 30px;
+}
+.header-nav .header-item-inner {
+    position: relative;
+}
+.header-nav .header-item-inner i.bi.bi-three-dots-vertical {
+    margin-left: 10px;
+}
+.header-nav .header-item-user-top {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+.header-nav .person-name {
+    font-size: 14px;
+    font-weight: 700;
+}
+.header-nav .person-email {
+    font-size: 12px;
+    font-weight: 300;
+}
+.header-nav .header-item-user-bottom {
+    padding-top: 10px;
+}
+.header-nav .header-item-user-bottom {
+    font-size: 14px;
+    font-weight: 400;
+}
+.header-nav .header-item-user-settings {
+    display: none;
+    opacity: 0;
+}
+.header-nav .header-item-user .header-item-user-bottom p {
+    white-space: nowrap;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #eeee;
+    font-size: 12px;
+    font-weight: 300;
 }
 /* ***
 [END] .header-nav
-*** */
+*** *** *** *** *** */
 
-/* ***
+/* *** *** *** *** ***
 [START] .footer
 *** */
 .footer {
-    position: fixed;
-    width: 100%;
-    height: auto;
-    background: aliceblue;
-    padding: 20px 0;
-    bottom: 0;
-    z-index: 999;
+    
 }
 /* ***
 [END] .footer
+*** *** *** *** *** */
+
+/* *** *** *** *** ***
+[START] .body-class
 *** */
+.body-class {
+    margin-top: calc(50px + 60px);
+    margin-left: 300px;
+    /* overflow: hidden; */
+}
+/* ***
+[END] .body-class
+*** *** *** *** *** */
+
+/* *** *** *** *** ***
+[START] .fixed-menu-left
+*** */
+.fixed-menu-left {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    background-color: var(--main-color);
+    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+    overflow: hidden;
+    height: 100%;
+    /* border-radius: 0 20px 20px 0; */
+    padding: 20px;
+    box-shadow: rgb(50 50 93 / 25%) 0px 13px 27px -5px, rgb(0 0 0 / 30%) 0px 8px 16px -8px;
+    /* margin-top: calc(50px + 60px); */
+    /* margin-left: 20px; */
+}
+/* ***
+[END] .fixed-menu-left
+*** *** *** *** *** */
+
+/* *** *** *** *** ***
+[START] .video-element
+*** */
+.video-element {
+    position: relative;
+    height: 100vh;
+    z-index: 0;
+}
+.video-element::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: var(--main-color);
+    mix-blend-mode: lighten;
+    opacity: 0.9;
+}
+.video-element video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    /* filter: grayscale(0.8); */
+}
+.video-element p {
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    padding: 20px 30px;
+    font-size: 60px;
+    color: #fff;
+}
+/* ***
+[END] .video-element
+*** *** *** *** *** */
+
+/* *** *** *** *** ***
+[START] .cell-login-form
+*** */
+.cell-login-form {
+    position: relative;
+}
+.cell-login-form .login-form {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: -200px;
+    transform: translateY(-50%);
+    background: #fff;
+    padding: 60px 45px;
+    border-radius: 5px;
+    box-shadow: rgb(136 165 191 / 48%) 6px 2px 16px 0px, rgb(255 255 255 / 80%) -6px -2px 16px 0px;
+    border-bottom: 5px solid var(--main-color);
+}
+.cell-login-form .login-form .login-form-pre p {
+    margin-bottom: 40px;
+}
+.cell-login-form .login-form form label {
+    font-size: 14px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--main-color);
+    display: inline-block;
+}
+.cell-login-form .login-form label input,
+.cell-login-form [type=text],
+.cell-login-form [type=password] {
+    border-radius: 10px !important;
+    padding: 10px !important;
+    height: 50px !important;
+}
+.cell-login-form button {
+    background: var(--main-color);
+    color: #fff;
+    padding: 20px 40px;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+.cell-login-form .login-form-after {
+    margin-top: 40px;
+    text-align: center;
+}
+.cell-login-form .login-form-after p {
+    font-size: 12px;
+}
+/* ***
+[END] .cell-login-form
+*** *** *** *** *** */
+
+/* *** *** *** *** ***
+[START] .user-profile-info
+*** */
+.user-profile-info {
+    text-align: center;
+    margin-top: 40px;
+}
+.user-profile-info img {
+    width: 120px;
+    height: 120px;
+    padding: 0.25rem;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    max-width: 100%;
+    border-radius: 50%;
+}
+.user-profile-info * {
+    color: #fff;
+}
+.user-profile-info .bio h3 {
+    font-weight: 800;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.user-profile-info .bio p {
+    font-size: 12px;
+}
+/* ***
+[END] .user-profile-info
+*** *** *** *** *** */
+
+/* *** *** *** *** ***
+[START] .left-menu-links
+*** */
+.fixed-menu-left-inner {
+    height: 100%;
+    position: relative;
+}
+.left-menu-links {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.left-menu-links a {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.left-menu-links a i {
+    margin-right: 10px;
+}
+.left-menu-links a:hover {
+    opacity: 0.85 !important;
+    transition: all 0.3s ease !important;
+}
+.left-menu-bottom {
+    position: absolute;
+    bottom: 80px;
+    z-index: 999999;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.left-menu-bottom a {
+    color: #fff;
+}
+.left-menu-bottom a i {
+    font-size: 30px;
+}
+/* ***
+[END] .left-menu-links
+*** *** *** *** *** */

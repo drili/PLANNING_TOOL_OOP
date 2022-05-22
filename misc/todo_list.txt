@@ -1,0 +1,4 @@
+// TODO LIST:
+
+1. Make function for console log in PHP
+    - Example: echo "<script>console.log('')</script>";

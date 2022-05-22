@@ -1,1 +1,6 @@
-console.log("::: Loaded global.js");
+$(document).ready(function() {
+    // *** AOS Animation
+    AOS.init();
+    
+    console.log("::: Loaded global.js");
+})

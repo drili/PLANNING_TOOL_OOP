@@ -5,7 +5,7 @@
         private $_password = "";
         private $_database = "kynetic_pt_oop";
 
-        protected $connection;
+        public $connection;
 
         public function __construct() {
             if (!isset($this->connection)) {

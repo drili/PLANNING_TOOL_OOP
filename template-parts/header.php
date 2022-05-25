@@ -76,7 +76,7 @@
                         <div class="header-item header-item-user">
                             <img class="profile-image" src="<?php echo $currentDirectory; ?>/assets/images/user_avatar_1.png">
                             <div class="header-item-inner">
-                                <i class="bi bi-three-dots-vertical"></i>
+                                <i class="bi bi-three-dots-vertical header-dots-icon"></i>
                                 <div class="header-item-user-settings item-hidden">
                                     <div class="header-item-user-settings-inner">
                                         <div class="header-item-user-top">
@@ -103,5 +103,5 @@
 
     <?php require_once dirname( __FILE__ ) . '/../' . 'template-parts/fixed-menu-left.php'; ?>
 
-    <div class="body-class" data-aos="zoom-in-up" data-aos-duration="300" data-aos-delay="250">
+    <div class="body-class">
         

@@ -39,6 +39,11 @@ button:hover {
 body[data-aos-easing="new-easing"] [data-aos], [data-aos][data-aos][data-aos-easing="new-easing"] {
     transition-timing-function: cubic-bezier(0.65, 0, 0.35, 1) !important;
 }
+
+.animate__animated.animate__bounce,
+.animate__animated.animate__slideInUp {
+    --animate-duration: 0.35s;
+}
 /* 
 Global Styles
 [END] 
@@ -133,7 +138,7 @@ Global Styles
 .header-nav .header-item-inner {
     position: relative;
 }
-.header-nav .header-item-inner i.bi.bi-three-dots-vertical {
+.header-nav .header-item-inner .header-dots-icon {
     margin-left: 10px;
 }
 .header-nav .header-item-user-top {
@@ -356,7 +361,7 @@ Global Styles
 }
 .left-menu-links a {
     color: #fff;
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 20px;
 }
 .left-menu-links a i {
@@ -373,12 +378,17 @@ Global Styles
     left: 0;
     width: 100%;
     text-align: center;
+    background: #e4e4e4;
+    border-radius: 5px;
+    padding: 10px;
 }
 .left-menu-bottom a {
-    color: #fff;
+    color: #000;
+    /* color: var(--main-color); */
 }
 .left-menu-bottom a i {
-    font-size: 30px;
+    font-size: 20px;
+    margin-right: 15px;
 }
 /* ***
 [END] .left-menu-links

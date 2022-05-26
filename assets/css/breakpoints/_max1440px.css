@@ -1,3 +1,75 @@
 @media only screen and (max-width: 1440px) {
     
 }
+
+@media print, screen and (min-width: 1440px) {
+    .table-box-outter {
+        padding-right: 40px;
+    }
+    .cell-position-start {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .cell-position-center {
+        display: flex;
+        justify-content: center;
+    }
+    .cell-position-end {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .grid-x>.xlarge-1,
+    .grid-x>.xlarge-2,
+    .grid-x>.xlarge-3,
+    .grid-x>.xlarge-4,
+    .grid-x>.xlarge-5,
+    .grid-x>.xlarge-6,
+    .grid-x>.xlarge-7,
+    .grid-x>.xlarge-8,
+    .grid-x>.xlarge-9,
+    .grid-x>.xlarge-10,
+    .grid-x>.xlarge-11,
+    .grid-x>.xlarge-12 {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+    }
+    .grid-x>.xlarge-1 {
+        width: 8.33333%;
+    }
+    .grid-x>.xlarge-2 {
+        width: 16.66667%;
+    }
+    .grid-x>.xlarge-3 {
+        width: 25%;
+    }
+    .grid-x>.xlarge-4 {
+        width: 33.33333%;
+    }
+    .grid-x>.xlarge-5 {
+        width: 41.66667%;
+    }
+    .grid-x>.xlarge-6 {
+        width: 50%;
+    }
+    .grid-x>.xlarge-7 {
+        width: 58.33333%;
+    }
+    .grid-x>.xlarge-8 {
+        width: 66.66667%;
+    }
+    .grid-x>.xlarge-9 {
+        width: 75%;
+    }
+    .grid-x>.xlarge-10 {
+        width: 83.33333%;
+    }
+    .grid-x>.xlarge-11 {
+        width: 91.66667%;
+    }
+    .grid-x>.xlarge-10 {
+        width: 100%;
+    }
+}

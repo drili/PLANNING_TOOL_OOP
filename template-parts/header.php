@@ -38,6 +38,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo $currentDirectory; ?>/assets/css/reset.css">
     <link rel="stylesheet" href="<?php echo $currentDirectory; ?>/assets/css/global.css">
+    <link rel="stylesheet" href="<?php echo $currentDirectory; ?>/assets/css/breakpoints/_max1440px.css">
 
     <!-- *** JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -61,14 +62,14 @@
             <ul>
                 <?php if(isset($_SESSION["loggedin"])): ?>
                     <li>
-                        <div class="header-item">
-                            <a href="#"><i class="bi bi-calendar-x"></i></a>
+                        <div class="header-item header-item-buttons">
+                            <a href="#"><i class="bi bi-calendar-x"></i>Register Offtime</a>
                         </div>
                     </li>
 
                     <li>
-                        <div class="header-item">
-                            <a href="#"><i class="bi bi-window-plus"></i></a>
+                        <div class="header-item header-item-buttons active-button">
+                            <a href="#"><i class="bi bi-window-plus"></i>Create Task</a>
                         </div>
                     </li>
 

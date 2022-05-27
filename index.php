@@ -130,8 +130,35 @@
         </div>
     </div>
 
-    <div class="cell small-3">
-        <p>Test Widget Right</p>
+    <div class="cell small-12 xlarge-3 cell-widget-right">
+        <div class="card-box-widget">
+            <div class="settings-title">
+                <h3>Dashboard settings</h3>
+                <i class="bi bi-gear"></i>
+            </div>
+
+            <div class="settings-filters">
+                <p class="text-color-main">Sprint filters</p>
+
+                <div class="settings-filters-box">
+                    <div class="settings-filter-by-sprint">
+                        <h4 class="text-bold">Filter by date</h4>
+                    </div>
+
+                    <div class="settings-filter-by-sprint">
+                        <h4 class="text-bold">Filter by sprint</h4>
+                    </div>
+
+                    <div class="settings-filter-by-sprint">
+                        <h4 class="text-bold">Filter by task type</h4>
+                    </div>
+
+                    <div class="settings-filter-by-sprint">
+                        <h4 class="text-bold">Filter by vertical</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -164,7 +191,7 @@
             legend: { position: 'bottom' },
             colors: ['#6363FC', "#01152e"],
             chartArea: {width:chartwidth,left:80,top:50,right:50,bottom:100,height:300},
-            backgroundColor: "#e4e4e4"
+            backgroundColor: "#f1f1f1"
         };
 
         var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));

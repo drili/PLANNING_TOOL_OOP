@@ -73,7 +73,7 @@
                         </div>
                     </li>
 
-                    <li>
+                    <li class="li-user">
                         <div class="header-item header-item-user">
                             <img class="profile-image" src="<?php echo $currentDirectory; ?>/assets/images/user_avatar_1.png">
                             <div class="header-item-inner">
@@ -87,6 +87,7 @@
                                         <div class="header-item-user-bottom">
                                             <a href="#"><i class="bi bi-person-plus"></i> Profile</a>
                                             <a href="#"><i class="bi bi-gear"></i> Settings</a>
+                                            <a href="#"><i class="bi bi-gear"></i> Feature Request</a>
                                             <a href="<?php echo $currentDirectory; ?>/user/logout_user.php"><i class="bi bi-arrow-bar-right"></i> Logout</a>
                                             <p>View your user dashboard</p>
                                         </div>

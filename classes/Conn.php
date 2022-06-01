@@ -1,9 +1,9 @@
 <?php
     class Conn {
-        private $_host = "localhost";
-        private $_username = "root";
-        private $_password = "";
-        private $_database = "kynetic_pt_oop";
+        private $_host = "mysql70.unoeuro.com";
+        private $_username = "hybridtech_dk";
+        private $_password = "BkrmDxahgA65";
+        private $_database = "hybridtech_dk_db_timera";
 
         public $connection;
 

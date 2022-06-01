@@ -12,10 +12,10 @@
                 $this->connection = new mysqli($this->_host, $this->_username, $this->_password, $this->_database);
 
                 if (!$this->connection) {
-                    echo "<script>console.log('::: (Conn.php) - Error connecting to database.');</script>";
+                    //echo "<script>console.log('::: (Conn.php) - Error connecting to database.');</script>";
                     exit;
                 } else {
-                    echo "<script>console.log('::: (Conn.php) - Database connection successful.');</script>";
+                    //echo "<script>console.log('::: (Conn.php) - Database connection successful.');</script>";
                 }
             }
 

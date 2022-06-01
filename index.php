@@ -130,7 +130,7 @@
         </div>
     </div>
 
-    <div class="cell small-12 xlarge-3 cell-widget-right">
+    <div class="cell small-12 xlarge-3 cell-widget-right" style="margin-top: 80px;z-index:-1;>
         <div class="card-box-widget">
             <div class="settings-title">
                 <h3>Dashboard settings</h3>

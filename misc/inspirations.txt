@@ -5,5 +5,9 @@ https://www.awwwards.com/20-best-web-fonts-from-google-web-fonts-and-font-face.h
 
 https://dribbble.com/shots/18098849-Chat-UI-Design
 
+Login screens: 
+https://dribbble.com/shots/16126814-Sign-Up/attachments/7979963?mode=media
+
 JQUERY SCROLL BAR
 https://cdnjs.com/libraries/jquery.scrollbar
+

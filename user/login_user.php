@@ -30,12 +30,7 @@
 ?>
 
 <div class="grid-x grid-x-login">
-    <div class="cell small-8 cell-video-element">
-        <div class="video-element">
-            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src="https://www.kynetic.dk/wp-content/uploads/2022/05/iStock-kyneticbgvideo-compressed1.mp4" type="video/mp4"></video>
-            <p class="logo-font">Planning Tool</p>
-        </div>
-    </div>
+    
 
     <div class="cell small-4 cell-login-form">
         <div class="login-form">
@@ -46,13 +41,13 @@
             <form action="" method="post" id="form_post_login_user">
                 <div class="form-group" data-aos="fade-left" data-aos-delay="100" data-aos-duration="300">
                     <label for="form_email">Email</label>
-                    <input name="form_email" type="text"  class="form-control" id="form_email" placeholder="" required="true">
+                    <input autocomplete="off" name="form_email" type="text" class="form-control" id="form_email" placeholder="" required="true">
                     <?php echo empty($sql_user_email_availability_message) ? "" : "<span class='error-message'>".$sql_user_email_availability_message."</span>"; ?>
                 </div>
 
                 <div class="form-group" data-aos="fade-left" data-aos-delay="200" data-aos-duration="300">
                     <label for="form_password">Password</label>
-                    <input type="password"  id="form_password" name="form_password" placeholder="" class="form-control"  required="true">
+                    <input autocomplete="off" type="password"  id="form_password" name="form_password" placeholder="" class="form-control"  required="true">
                 </div>
 
                 <div class="col-sm-12 text-right">
@@ -60,9 +55,12 @@
                 </div>
             </form>
             <div class="login-form-after">
-                <p>By KYNETIC A/S</p>
+                <p>by KYNETIC A/S</p>
             </div>
         </div>
+    </div>
+    <div class="cell small-8 cell-video-element">
+        <div class="video-element"></div>
     </div>
 </div>
 

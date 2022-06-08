@@ -26,16 +26,16 @@
 
     <style>
         .left-menu-links a {
-            opacity: 0.5 !important;
+            opacity: 1 !important;
         }
         .left-menu-links <?php echo ".".$activePage; ?> {
             opacity: 1 !important;
-            font-weight: 800;
-            border-left: dotted 2px;
-            padding-left: 10px;
-            background: rgba(128,128,207,0.6);
-            padding: 10px;
+            border-left: none;
+            background-transparent;
+            padding: 0;
             border-radius: 5px;
+            color: #000;
+            font-weight: 500;
         }
     </style>
 <?php else: ?>

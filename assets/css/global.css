@@ -7,7 +7,8 @@ Global Styles
 [START] 
 *** */
 :root {
-    --main-color: #6363FC;
+    --main-color: #573ce9;
+    --main-color-dark: #4430b8;
     --main-color-alternativ: #01152e;
 }
 * {
@@ -17,8 +18,8 @@ body {
     background-color: #fff;
 }
 h1 {
-    font-size: 34px;
-    font-weight: 800;
+    font-size: 32px;
+    font-weight: 500;
     margin-bottom: 40px;
 }
 h2 {
@@ -109,12 +110,12 @@ Global Styles
 .header-nav {
     background: #fff;
     position: absolute;
+    z-index: 999;
     width: 100%;
     height: 70px;
     top: 0;
     padding-left: 320px;
     padding-right: 60px;
-    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 }
 .header-nav ul {
     display: flex;
@@ -293,17 +294,14 @@ Global Styles
     left: 0;
     top: 0;
     z-index: 999;
-    background-color: var(--main-color);
+    background-color: #fff;
     width: 300px;
     min-width: 300px;
     max-width: 300px;
     overflow: hidden;
     height: 100%;
-    /* border-radius: 0 20px 20px 0; */
-    padding: 20px;
-    box-shadow: rgb(50 50 93 / 25%) 0px 13px 27px -5px, rgb(0 0 0 / 30%) 0px 8px 16px -8px;
-    /* margin-top: calc(50px + 60px); */
-    /* margin-left: 20px; */
+    padding: 40px;
+    border-right: 1px solid #ddd;
 }
 /* ***
 [END] .fixed-menu-left
@@ -325,9 +323,14 @@ Global Styles
     width: 100%;
     height: 100%;
     z-index: 2;
-    background-color: var(--main-color);
+    background-color: #888
     mix-blend-mode: lighten;
     opacity: 0.9;
+    background-image: url(../../assets/images/login/1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
 }
 .video-element video {
     position: relative;
@@ -352,31 +355,52 @@ Global Styles
 /* *** *** *** *** ***
 [START] .cell-login-form
 *** */
+.grid-x-login{
+    margin-left: 0;
+    margin-right: 0;
+}
 .cell-login-form {
     position: relative;
+    background: url(../../assets/images/kynetic-logo.svg);
+    background-repeat: no-repeat;
+    background-size: 120px auto;
+    background-position: right 40px top 30px;
 }
 .cell-login-form .login-form {
     position: absolute;
     width: 100%;
     top: 50%;
-    left: -200px;
+    left: 0;
     transform: translateY(-50%);
     background: #fff;
     padding: 60px 45px;
-    border-radius: 5px;
-    box-shadow: rgb(136 165 191 / 48%) 6px 2px 16px 0px, rgb(255 255 255 / 80%) -6px -2px 16px 0px;
-    border-bottom: 5px solid var(--main-color);
 }
 .cell-login-form .login-form .login-form-pre p {
     margin-bottom: 40px;
 }
 .cell-login-form .login-form form label {
     font-size: 14px;
-    font-weight: 800;
+    font-weight: 500;
     margin-bottom: 10px;
-    border-bottom: 1px solid var(--main-color);
     display: inline-block;
+    color: #9e9fa9;
 }
+
+input:-webkit-autofill::first-line {font-size: 16px!important;}
+
+input:-webkit-autofill::first-line,
+input {
+    font-size: 16px!important;
+    font-family: 'Sora', sans-serif!important;
+  }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    font-size: 16px;
+    }
 .cell-login-form .login-form label input,
 .cell-login-form [type=text],
 .cell-login-form [type=password] {
@@ -387,16 +411,27 @@ Global Styles
 .cell-login-form button {
     background: var(--main-color);
     color: #fff;
-    padding: 20px 40px;
+    padding: 19px 40px;
     border-radius: 5px;
-    margin-top: 40px;
+    margin-top: 60px;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 600;
 }
+.cell-login-form button:hover {
+    background: var(--main-color-dark);
+}
+
 .cell-login-form .login-form-after {
     margin-top: 40px;
     text-align: center;
 }
 .cell-login-form .login-form-after p {
     font-size: 12px;
+}
+
+.login-form h2{
+    font-size: 30px;
 }
 /* ***
 [END] .cell-login-form
@@ -407,7 +442,7 @@ Global Styles
 *** */
 .user-profile-info {
     text-align: center;
-    margin-top: 40px;
+    margin-bottom: 80px;
 }
 .user-profile-info img {
     width: 120px;
@@ -420,15 +455,16 @@ Global Styles
     border-radius: 50%;
 }
 .user-profile-info * {
-    color: #fff;
+    color: #000;
 }
 .user-profile-info .bio h3 {
-    font-weight: 800;
+    font-weight: 400;
     margin-top: 20px;
     font-size: 20px;
 }
 .user-profile-info .bio p {
     font-size: 12px;
+    display: none;
 }
 /* ***
 [END] .user-profile-info
@@ -447,12 +483,13 @@ Global Styles
     flex-direction: column;
 }
 .left-menu-links a {
-    color: #fff;
+    color: #898989;
     font-size: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    font-weight: 300;
 }
 .left-menu-links a i {
-    margin-right: 10px;
+    margin-right: 14px;
 }
 .left-menu-links a:hover {
     opacity: 0.85 !important;
@@ -465,13 +502,12 @@ Global Styles
     left: 0;
     width: 100%;
     text-align: center;
-    background: #f1f1f1;
+    background: var(--main-color);
     border-radius: 5px;
     padding: 10px;
 }
 .left-menu-bottom a {
-    color: #000;
-    /* color: var(--main-color); */
+    color: #fff;
 }
 .left-menu-bottom a i {
     font-size: 20px;

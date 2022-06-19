@@ -99,6 +99,77 @@ body[data-aos-easing="new-easing"] [data-aos], [data-aos][data-aos][data-aos-eas
 .animate__animated.animate__slideInUp {
     --animate-duration: 0.35s;
 }
+
+.create-task{
+    position: fixed;
+    display: block;
+    background-color: #573ce9;
+    background-color: rgb(35, 34, 36);
+    width: 60px;
+    height: 60px;
+    z-index: 2;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 100%;
+    box-shadow: 0 5px 20px rgb(0 0 0 / 20%);
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 40px;
+    font-weight: 200;
+    line-height: 60px;
+}
+
+.create-task:hover{
+    color: #fff;
+    opacity: 0.9;
+}
+
+[data-tooltip]:before,
+[data-tooltip]:after {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  -webkit-font-smoothing: antialiased;
+  margin: 0 auto;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 9;
+  transition: 0.6s ease-in-out 0.4s;
+}
+
+[data-tooltip]:before {
+  content: "";
+  height: 0;
+  width: 0;
+  top: calc(100% - 100px);
+  transform: rotate(180deg);
+  border-style: solid;
+  border-width: 10px;
+  border-color: transparent transparent #333 transparent;
+}
+
+[data-tooltip]:after {
+  content: attr(data-tooltip);
+  white-space: nowrap;
+  background: #333;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+  top: calc(100% - 200px);
+  color: #fff;
+  border-radius: 2px;
+  text-shadow: 0px 1px 1px #000;
+  z-index: 9;
+}
+
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.4s ease-in-out 0.3s;
+}
+
 /* 
 Global Styles
 [END] 
@@ -325,8 +396,10 @@ Global Styles
     z-index: 2;
     background-color: #888
     mix-blend-mode: lighten;
-    opacity: 0.9;
+    opacity: 1;
     background-image: url(../../assets/images/login/1.jpg);
+    background-image: url(https://images.pexels.com/photos/1888883/pexels-photo-1888883.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-image: url(https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -365,6 +438,7 @@ Global Styles
     background-repeat: no-repeat;
     background-size: 120px auto;
     background-position: right 40px top 30px;
+    max-width: 550px;
 }
 .cell-login-form .login-form {
     position: absolute;
@@ -391,7 +465,7 @@ input:-webkit-autofill::first-line {font-size: 16px!important;}
 input:-webkit-autofill::first-line,
 input {
     font-size: 16px!important;
-    font-family: 'Sora', sans-serif!important;
+    font-family: 'Sora'!important;
   }
 
 input:-webkit-autofill,
@@ -432,6 +506,10 @@ input:-webkit-autofill:active{
 
 .login-form h2{
     font-size: 30px;
+}
+
+.cell-video-element{
+    flex-grow: 1!important;
 }
 /* ***
 [END] .cell-login-form

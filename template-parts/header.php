@@ -29,7 +29,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- *** PWA compatibility -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="<?php echo $currentDirectory; ?>/assets/images/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="<?php echo $currentDirectory; ?>/assets/images/favicon.png"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="<?php echo $currentDirectory; ?>/manifest.json" />
+    
     <title>Planning Tool OOP</title>
 
     <!-- *** CSS -->
@@ -58,6 +65,7 @@
 </head>
 <body>
     <div class="header-nav" data-aos="fade-down" data-aos-duration="300">
+    <button id="installApp" onclick="showInstallPromotion();">Install</button>
         <div class="header-nav-functions">
             <ul>
                 <?php if(isset($_SESSION["loggedin"])): ?>

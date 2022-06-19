@@ -1,6 +1,7 @@
 {
     "short_name": "Planning Tool",
     "name": "KYNETIC Planning Tool",
+    "prefer_related_applications": false,
     "icons": [
       {
         "src": "assets/images/favicon-192.png",

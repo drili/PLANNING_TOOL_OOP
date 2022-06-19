@@ -12,7 +12,7 @@
             <div class="left-menu-links">
                 <a href="<?php echo $currentDirectory; ?>/index.php" class="active-dashboard" data-aos="fade-right" data-aos-duration="300" data-aos-delay="200"><i class="bi bi-grid-1x2"></i> Dashboard</a>
                 <a href="<?php echo $currentDirectory; ?>/workflow.php" class="active-workflow" data-aos="fade-right" data-aos-duration="300" data-aos-delay="250"><i class="bi bi-bricks"></i> Workflow</a>
-                <a href="#" class="active-sprintoverview" data-aos="fade-right" data-aos-duration="300" data-aos-delay="300"><i class="bi bi-calendar-event"></i> Sprint Overview</a>
+                <a href="<?php echo $currentDirectory; ?>/sprint_overview.php" class="active-sprintoverview" data-aos="fade-right" data-aos-duration="300" data-aos-delay="300"><i class="bi bi-calendar-event"></i> Sprint Overview</a>
                 <a href="#" class="active-timeregistrations" data-aos="fade-right" data-aos-duration="300" data-aos-delay="350"><i class="bi bi-calendar-plus"></i> Time Registrations</a>
                 <a href="#" class="active-customers" data-aos="fade-right" data-aos-duration="300" data-aos-delay="400"><i class="bi bi-people-fill"></i> Customers</a>
                 <a href="<?php echo $currentDirectory; ?>/admin/index.php" class="active-admin" data-aos="fade-right" data-aos-duration="300" data-aos-delay="450"><i class="bi bi-gear"></i> Admin</a>
